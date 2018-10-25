@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("hideAll").style.display = "none";
   function slideInElementsFunc() {
     let slideInElements = document.getElementsByClassName('slideIn');
 

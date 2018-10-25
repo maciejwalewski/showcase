@@ -6,12 +6,24 @@
   cursor: default;
 }
 
+#hideAll {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  z-index: 99;
+  /* Higher than anything else in the document */
+
+}
+
 body {
   font-family: "Questrial";
   display: flex;
   justify-content: center;
 
-  > div {
+  >div {
     width: 80vw;
   }
 }
@@ -96,10 +108,11 @@ footer {
 }
 
 //IE rules
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.slideIn {
-		opacity: 1;
-		position: relative;
-		right: 0px;
-	}
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .slideIn {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
 }
