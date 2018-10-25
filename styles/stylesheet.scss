@@ -1,0 +1,105 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css?family=Krub:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+* {
+  cursor: default;
+}
+
+body {
+  font-family: "Questrial";
+  display: flex;
+  justify-content: center;
+
+  > div {
+    width: 80vw;
+  }
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slideIn {
+  opacity: 0;
+  position: relative;
+  right: -40px;
+  transition: all 0.8s ease-in-out;
+
+  &__slided {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+section,
+footer {
+  margin: 40px 0;
+
+  header {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #8c8c8c;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+#hello {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.record {
+  &__important {
+    font-size: 18px;
+    color: black;
+  }
+
+  &__spacer {
+    font-size: 14px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.link-box {
+  font-size: 20px;
+  font-weight: 400;
+  color: #8c8c8c;
+  padding: 5px 0;
+
+  &__details {
+    font-size: 14px;
+  }
+}
+
+//IE rules
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.slideIn {
+		opacity: 1;
+		position: relative;
+		right: 0px;
+	}
+}
