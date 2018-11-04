@@ -169,6 +169,12 @@ footer a {
   font-size: 14px;
 }
 
+@media screen and (max-width: 400px) {
+  .footer-info__span {
+    display: block;
+  }
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .slideIn {
     opacity: 1;

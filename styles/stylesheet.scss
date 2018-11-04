@@ -15,7 +15,6 @@
   background-color: white;
   z-index: 99;
   /* Higher than anything else in the document */
-
 }
 
 body {
@@ -23,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
 
-  >div {
+  > div {
     width: 80vw;
   }
 }
@@ -107,9 +106,16 @@ footer {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .footer-info {
+    &__span {
+      display: block;
+    }
+  }
+}
+
 //IE rules
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .slideIn {
     opacity: 1;
     position: relative;
