@@ -45,7 +45,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -71,39 +71,25 @@ table {
 
 body {
   font-family: "Questrial";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body > div {
   width: 80vw;
 }
 
 .column-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .slideIn {
   opacity: 0;
   position: relative;
   right: -40px;
-  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
-
 .slideIn__slided {
   opacity: 1;
   right: 0;
@@ -113,14 +99,12 @@ section,
 footer {
   margin: 40px 0;
 }
-
 section header,
 footer header {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 section p,
 footer p {
   font-size: 20px;
@@ -128,7 +112,6 @@ footer p {
   margin-bottom: 5px;
   color: #8c8c8c;
 }
-
 section a,
 footer a {
   cursor: pointer;
@@ -143,8 +126,8 @@ footer a {
 .record__important {
   font-size: 18px;
   color: black;
+  margin: 10px 0;
 }
-
 .record__spacer {
   font-size: 14px;
 }
@@ -164,7 +147,6 @@ footer a {
   color: #8c8c8c;
   padding: 5px 0;
 }
-
 .link-box__details {
   font-size: 14px;
 }
@@ -174,7 +156,6 @@ footer a {
     display: block;
   }
 }
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .slideIn {
     opacity: 1;
@@ -182,4 +163,5 @@ footer a {
     right: 0px;
   }
 }
+
 /*# sourceMappingURL=stylesheet.css.map */
